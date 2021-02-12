@@ -66,9 +66,12 @@ input[type="button"] {
   }
 
   #aufschlagenSteuer {
-    margin-bottom: 9px;
+    margin-bottom: 11px;
   }
   body {
     font-size: 14px;
+  }
+  .inputText {
+    padding-bottom: 25px;
   }
 }
