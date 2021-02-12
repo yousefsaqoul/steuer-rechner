@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mehrwertSteuerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(211, 215, 223);
+  width: 36%;
+  height: 600px;
+  margin: 50px 30% 0 30%;
+  box-shadow: 1px 2px 9px;
+}
+p {
+  font-size: 20px;
+}
+
+.inputText {
+  height: 100px;
+  border-bottom: 5px solid #fff;
+}
+#aufschlagenSteuer {
+  margin-bottom: 10px;
+}
+.userInput {
+  display: flex;
+  flex-direction: column;
+}
+#inputNummer {
+  width: 120px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+input[type="button"] {
+  height: 25px;
+  background-color: rgb(7, 7, 202);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#bruttoBetrag,
+#nettoBetrag {
+  border-top: 5px solid #fff;
+  padding-top: 30px;
+}
+#nettoBetrag {
+  display: none;
+}
+#bruttoBetrag {
+  display: none;
+}
+#mehrwertSteuer {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mehrwertSteuerContainer {
+    width: 95%;
+    margin: 50px 10px 0 0;
+    padding: 10px;
+  }
+
+  #aufschlagenSteuer {
+    margin-bottom: 9px;
+  }
+  body {
+    font-size: 14px;
+  }
+}

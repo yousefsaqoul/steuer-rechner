@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehrwertsteuer Rechner</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body id="myBody">
+
+	<section class="mehrwertSteuerContainer">
+		<article>
+			<div class="inputText">
+				<p>Was soll berechnet werden?</p>
+				<input type="radio" id="aufschlagenSteuer" name="Mehrwertsteuer" value="" checked>
+				<label for="">Mehrwertsteuer aufschlagen (Netto zu Brutto )</label><br>
+				<input type="radio" id="abziehenSteuer" name="Mehrwertsteuer" value="">
+				<label for="">Mehrwertsteuer abziehen  ( Brutto zu Netto)</label><br>			  
+			</div>
+			<div>
+				<p>Mehrwertsteuersatz</p>
+				
+				
+				<input type="radio" id="neunzehn" name="Mehrwertsteuersatz" value="19" checked>
+				<label for="">19 %</label>
+				<input type="radio" id="sieben" name="Mehrwertsteuersatz" value="7">
+				<label for="">7%</label>
+			</div>
+			<div class="userInput">
+				<p>geben Sie Ihr Betrag in Euro</p>
+				<input type="Number" id="inputNummer">
+				<input type="Button" value="BERECHNEN" onclick="berchnenNetto()">
+			</div>
+			<div>
+				<h1 style="color:rgb(5, 103, 136)">Ergebnis</h1>
+				<div class="resultContainer">
+					<h1 id="mehrwertSteuer">Mehrwertsteuerbetrag</h1>
+					<h3 id="ergebniss2"></h3>
+					<h1 id="bruttoBetrag"> Bruttobetrag (Endpreis)</h1>
+					<h1 id="nettoBetrag"> Nettobetarg</h1>
+					<h3 id="ergebniss"></h3>
+				</div>
+				
+			</div>		
+		</article>		
+	</section>
+
+
+
+<script src="assets/js/main.js">
+
+</script>
+</body>
+
+</html>
+
